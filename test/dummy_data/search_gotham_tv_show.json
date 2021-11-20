@@ -1,0 +1,91 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/A9lC7Mn3D6alhO4rkuatdW8oCWy.jpg",
+      "first_air_date": "2014-09-22",
+      "genre_ids": [
+        18,
+        80,
+        10765
+      ],
+      "id": 60708,
+      "name": "Gotham",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Gotham",
+      "overview": "Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?",
+      "popularity": 116.736,
+      "poster_path": "/4XddcRDtnNjYmLRMYpbrhFxsbuq.jpg",
+      "vote_average": 7.6,
+      "vote_count": 2499
+    },
+    {
+      "backdrop_path": "/wHnl7DOegE1czhrxhNunWJl33FV.jpg",
+      "first_air_date": "2000-07-27",
+      "genre_ids": [
+        18,
+        16,
+        35,
+        10759,
+        80
+      ],
+      "id": 15185,
+      "name": "Gotham Girls",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Gotham Girls",
+      "overview": "Gotham Girls is an American Flash animation series about the females of Gotham City, created and produced jointly by Warner Brothers and Noodle Soup Productions in 2000 to 2002. Episodes starred Harley Quinn, Poison Ivy, Batgirl, Catwoman and Zatanna in short stories of varying length about the daily lives of the characters.\n\nIt is also the name of a related comic book series.",
+      "popularity": 6.91,
+      "poster_path": "/nx5288muDMdOM5fNHEovKYEnDCo.jpg",
+      "vote_average": 7.9,
+      "vote_count": 9
+    },
+    {
+      "backdrop_path": "/d53n4liA14NawuPZgVWoKIOySlQ.jpg",
+      "first_air_date": "2008-06-13",
+      "genre_ids": [
+        10767,
+        18,
+        80,
+        10763
+      ],
+      "id": 110419,
+      "name": "Gotham Tonight",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Gotham Tonight",
+      "overview": "\"Gotham Tonight\" was a talk show featuring guests from \"The Dark Knight\" leading up to the release of the 2008 film. The series was originally released exclusively through Comcast On Demand. It was later included as a special feature for the home video release of The Dark Knight.",
+      "popularity": 1.991,
+      "poster_path": "/whwSUzJ4ly7fFjYdhcZjvJWsMu7.jpg",
+      "vote_average": 10,
+      "vote_count": 2
+    },
+    {
+      "backdrop_path": null,
+      "first_air_date": "2006-07-21",
+      "genre_ids": [
+      ],
+      "id": 16903,
+      "name": "Live at Gotham",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Live at Gotham",
+      "overview": "Live at Gotham is a standup comedy television show airing on Comedy Central in the United States. The show features up and coming stand up comedians performing live at the Gotham Comedy Club in New York City. It premiered on July 21, 2006.",
+      "popularity": 1.324,
+      "poster_path": "/j0sJCd8Qo6g6rX8Hvy7EzVNbpZf.jpg",
+      "vote_average": 0,
+      "vote_count": 0
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 4
+}

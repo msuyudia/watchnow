@@ -1,0 +1,100 @@
+import 'dart:convert';
+
+import 'package:http/io_client.dart';
+import 'package:watchnow/common/constants.dart';
+import 'package:watchnow/common/exception.dart';
+import 'package:watchnow/data/models/movie_detail_model.dart';
+import 'package:watchnow/data/models/movie_model.dart';
+import 'package:watchnow/data/models/movie_response.dart';
+
+abstract class MovieRemoteDataSource {
+  Future<List<MovieModel>> getNowPlayingMovies();
+
+  Future<List<MovieModel>> getPopularMovies();
+
+  Future<List<MovieModel>> getTopRatedMovies();
+
+  Future<MovieDetailModel> getMovieDetail(int id);
+
+  Future<List<MovieModel>> getMovieRecommendations(int id);
+
+  Future<List<MovieModel>> searchMovies(String query);
+}
+
+class MovieRemoteDataSourceImpl implements MovieRemoteDataSource {
+  final Future<IOClient> ioClient;
+
+  MovieRemoteDataSourceImpl({required this.ioClient});
+
+  @override
+  Future<List<MovieModel>> getNowPlayingMovies() async {
+    final response =
+        await ioClient.then((value) => value.get(Uri.parse('$BASE_URL/movie/now_playing?$API_KEY')));
+
+    if (response.statusCode == 200) {
+      return MovieResponse.fromJson(json.decode(response.body)).movieList;
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<MovieDetailModel> getMovieDetail(int id) async {
+    final response =
+        await ioClient.then((value) => value.get(Uri.parse('$BASE_URL/movie/$id?$API_KEY')));
+
+    if (response.statusCode == 200) {
+      return MovieDetailModel.fromJson(json.decode(response.body));
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<List<MovieModel>> getMovieRecommendations(int id) async {
+    final response = await ioClient
+        .then((value) => value.get(Uri.parse('$BASE_URL/movie/$id/recommendations?$API_KEY')));
+
+    if (response.statusCode == 200) {
+      return MovieResponse.fromJson(json.decode(response.body)).movieList;
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<List<MovieModel>> getPopularMovies() async {
+    final response =
+        await ioClient.then((value) => value.get(Uri.parse('$BASE_URL/movie/popular?$API_KEY')));
+
+    if (response.statusCode == 200) {
+      return MovieResponse.fromJson(json.decode(response.body)).movieList;
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<List<MovieModel>> getTopRatedMovies() async {
+    final response =
+        await ioClient.then((value) => value.get(Uri.parse('$BASE_URL/movie/top_rated?$API_KEY')));
+
+    if (response.statusCode == 200) {
+      return MovieResponse.fromJson(json.decode(response.body)).movieList;
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<List<MovieModel>> searchMovies(String query) async {
+    final response = await ioClient
+        .then((value) => value.get(Uri.parse('$BASE_URL/search/movie?$API_KEY&query=$query')));
+
+    if (response.statusCode == 200) {
+      return MovieResponse.fromJson(json.decode(response.body)).movieList;
+    } else {
+      throw ServerException();
+    }
+  }
+}

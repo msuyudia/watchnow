@@ -1,0 +1,17 @@
+{
+  "dates": {
+    "maximum": "2021-05-23",
+    "minimum": "2021-04-05"
+  },
+  "page": 1,
+  "results": [
+    {
+      "id": 1,
+      "name": "name",
+      "overview": "overview",
+      "posterPath": "posterPath"
+    }
+  ],
+  "total_pages": 47,
+  "total_results": 940
+}

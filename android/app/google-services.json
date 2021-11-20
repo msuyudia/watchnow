@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "123363855179",
+    "project_id": "watch-now-1998",
+    "storage_bucket": "watch-now-1998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123363855179:android:5d4b4027994c43c68b76ce",
+        "android_client_info": {
+          "package_name": "com.suy.watchnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123363855179-849laru87hcgjclap6rl9iaocemb6ldj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZgKLzoi3MQm5x3MkU6dOjFQASTtWCdeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123363855179-849laru87hcgjclap6rl9iaocemb6ldj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
