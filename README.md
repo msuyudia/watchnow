@@ -1,1 +1,1 @@
-# Watch Now
+[![Codemagic build status](https://api.codemagic.io/apps/6198df2e1cffa50b74de3c73/6198df2e1cffa50b74de3c72/status_badge.svg)](https://codemagic.io/apps/6198df2e1cffa50b74de3c73/6198df2e1cffa50b74de3c72/latest_build)
